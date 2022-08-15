@@ -23,7 +23,7 @@ class AdminSiteTests(TestCase):
             name='testuser'
         )
 
-    def test_user_list(self):
+    def test_users_lists(self):
         """Test list user are listed on page"""
         url = reverse('admin:core_user_changelist')
         res = self.client.get(url)
